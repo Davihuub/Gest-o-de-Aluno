@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gestão de Alunos</title>
+  </head>
+  <body>
+    <form id="boletim" novalidate>
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome" placeholder="Digite seu nome completo" />
+
+      <label for="idade"
+        >Idade:
+        <input type="number" id="idade" min="0" placeholder="Digite a idade" />
+      </label>
+      <label for="turma"
+        >Turma:
+        <input type="text" id="turma" placeholder="Digite sua turma" />
+      </label>
+
+      <label for="n1"
+        >Nota 1:
+        <input
+          type="number"
+          id="n1"
+          min="0"
+          max="10"
+          placeholder="Digite a 1ª nota"
+        />
+      </label>
+      <label for="n2">
+        Nota 2:
+        <input
+          type="number"
+          id="n2"
+          min="0"
+          max="10"
+          placeholder="Digite a 2ª nota"
+        />
+      </label>
+       <ul id="lista">
+        <h4>Alunos Cadastrados:</h4>
+    </ul>
+      
+    <p id="total">Total de Alunos: 0</p>
+    <p id="aprovados">Total de Aprovados: 0</p>
+    <p id="reprovados">Total de Reprovados: 0</p>
+      <button id="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+      
+    </form>
+
+    <p id="saida"></p>
+    
+
+    <script src="script.js"></script>
+      
+    </script>
+  </body>
+</html>
